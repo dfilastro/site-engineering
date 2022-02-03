@@ -1,0 +1,102 @@
+.section {
+  height: 100%;
+
+  .section-header {
+    align-items: center;
+    margin: auto;
+
+    .section-title {
+      margin: auto;
+      justify-content: center;
+      display: flex;
+      font-weight: bold;
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+
+    .nav-our-projects {
+      display: flex;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+  }
+
+  .paragraphs-left {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin: auto;
+    height: 20%;
+    z-index: 999;
+    position: relative;
+    margin-bottom: 24px;
+
+    .paragraph-box {
+      margin: auto 0;
+      height: 128px;
+      width: 280px;
+      background: #f8f8f8;
+      padding: 16px;
+      position: absolute;
+      top: 25%;
+      left: 10%;
+
+      .paragraph-title {
+        text-transform: uppercase;
+      }
+
+      .paragraph-description {
+        font-size: 12px;
+      }
+
+      .paragraph-link {
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      &:hover {
+        background: #ff5a30;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .paragraphs-right {
+    display: grid;
+    // grid-template-columns: 4fr 1fr;
+    margin: auto;
+    height: 20%;
+    z-index: 999;
+    position: relative;
+    margin-bottom: 24px;
+    align-items: center;
+
+    .paragraph-box {
+      margin: auto 0;
+      height: 128px;
+      width: 280px;
+      background: #f8f8f8;
+      padding: 16px;
+      position: absolute;
+      top: 25%;
+      right: 10%;
+
+      .paragraph-title {
+        text-transform: uppercase;
+      }
+
+      .paragraph-description {
+        font-size: 12px;
+      }
+
+      .paragraph-link {
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      &:hover {
+        background: #ff5a30;
+        color: #ffffff;
+      }
+    }
+  }
+}
