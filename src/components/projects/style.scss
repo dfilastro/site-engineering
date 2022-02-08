@@ -1,0 +1,44 @@
+.section2-header {
+  display: flex;
+  justify-content: center;
+  margin: 5vh;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+
+  aside {
+    display: grid;
+    grid-template-areas: '1 2' '3 4';
+    grid-gap: 5px;
+    padding: 16px;
+
+    div {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h4 {
+        color: #ff5a30;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  img {
+    border-top-right-radius: 500px;
+    border-bottom-right-radius: 500px;
+    width: 50%;
+  }
+}
