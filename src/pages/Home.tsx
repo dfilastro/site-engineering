@@ -1,5 +1,5 @@
 import '../styles/global.scss';
-import { Section1 } from '../components/about';
+import { News } from '../components/news';
 import { Body } from '../components/body';
 import { Section2 } from '../components/projects';
 
@@ -7,8 +7,8 @@ export function Home() {
   return (
     <div>
       <Body />
-      <Section1 />
-      <Section2 />
+      <News />
+      {/* <Section2 /> */}
     </div>
   );
 }
