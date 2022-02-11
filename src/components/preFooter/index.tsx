@@ -3,11 +3,11 @@ import '../preFooter/style.scss';
 
 export function Prefooter() {
   return (
-    <section className='pre-footer'>
-      <div className='container'>
-        <div className='columns'>
-          <div className='company-description'>
-            <a href='#' className='logo-pre-footer'>
+    <section className='pre-footer-container'>
+      <div className='pre-footer-container-inner'>
+        <div className='pre-footer-columns'>
+          <div className='pre-footer-company-description'>
+            <a href='#' className='pre-footer-links'>
               <img src={imgLogo} alt='' />
             </a>
             <p>
@@ -18,47 +18,55 @@ export function Prefooter() {
             </p>
           </div>
           <div className='navigation'>
-            <h6>Navegação</h6>
+            <h6 className='pre-footer-title-columns'>Navegação</h6>
             <div className='prefooter-lists'>
               <div>
-                <a href='#'>Noticias</a>
+                <a href='#' className='pre-footer-links'>
+                  Noticias
+                </a>
               </div>
               <div>
-                <a href='#'>Nossos Projetos</a>
+                <a href='#' className='pre-footer-links'>
+                  Nossos Projetos
+                </a>
               </div>
               <div>
-                <a href='#'>Serviços</a>
+                <a href='#' className='pre-footer-links'>
+                  Serviços
+                </a>
               </div>
               <div>
-                <a href='#'>Contatos</a>
+                <a href='#' className='pre-footer-links'>
+                  Contatos
+                </a>
               </div>
             </div>
           </div>
           <div className='recent-comments'>
-            <h6>Comentários</h6>
+            <h6 className='pre-footer-title-columns'>Comentários</h6>
             <div className='prefooter-lists'>
               <div>
-                <article>
-                  <p className='comment-author'>Rikieri Sartor</p>
-                  <p className='comment-body'>
+                <article className='pre-footer-comments-container'>
+                  <p className='pre-footer-comment-author'>Rikieri Sartor</p>
+                  <p className='pre-footer-comment-body'>
                     A Negro é a melhor empresa de engenharia que já contratei e ainda aceitam pagamento em dólar,
                     recomendo 100%.
                   </p>
                 </article>
               </div>
               <div>
-                <article>
-                  <p className='comment-author'>Lucas Lauriano</p>
-                  <p className='comment-body'>
+                <article className='pre-footer-comments-container'>
+                  <p className='pre-footer-comment-author'>Lucas Lauriano</p>
+                  <p className='pre-footer-comment-body'>
                     Meu cachorro adora as soluções inovadoras que a Negro trouxe pro nosso projeto, simplesmente a
                     melhor.
                   </p>
                 </article>
               </div>
               <div>
-                <article>
-                  <p className='comment-author'>Julio Paes</p>
-                  <p className='comment-body'>
+                <article className='pre-footer-comments-container'>
+                  <p className='pre-footer-comment-author'>Julio Paes</p>
+                  <p className='pre-footer-comment-body'>
                     Depois que comprei meu terceiro Civic, tive que aumentar a garagem, eles foram super atenciosos e
                     rápidos.
                   </p>
@@ -67,12 +75,15 @@ export function Prefooter() {
             </div>
           </div>
           <div className='contacts'>
-            <h6>Contatos</h6>
+            <h6 className='pre-footer-title-columns'>Contatos</h6>
             <div className='prefooter-lists'>
               <div>Rua Professor Paulo Galli, 137 - Centro Cocal do Sul/SC</div>
               <div>Telefone: (48) 999.340-240</div>
               <div>
-                E-mail: <a href='mailto:diego@negromee.com'>diego@negromee.com</a>
+                E-mail:{' '}
+                <a href='mailto:diego@negromee.com' className='pre-footer-links'>
+                  diego@negromee.com
+                </a>
               </div>
               <div>Atendimento: Seg-Sex: 9h-17h</div>
             </div>

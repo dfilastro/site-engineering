@@ -1,19 +1,21 @@
-.pre-footer {
+.pre-footer-container {
+  font-family: 'Montserrat', sans-serif;
   background: #333;
   color: #ffffff;
   font-size: 14px;
   line-height: 1.625;
-
+  padding: 50px;
+  max-height: auto;
   //   padding: 80px 0;
 
-  .container {
-    .columns {
-      a {
+  .pre-footer-container-inner {
+    .pre-footer-columns {
+      .pre-footer-links {
         text-decoration: none;
         color: #e61919;
       }
 
-      a:hover {
+      .pre-footer-links:hover {
         color: #ffffff;
         transition: 0.2s;
       }
@@ -28,14 +30,15 @@
         width: 300px;
       }
 
-      .company-description {
+      .pre-footer-company-description {
+        // margin-top: 28px;
+
         > p {
           color: #888;
-          //   margin-top: 28px;
         }
       }
 
-      h6 {
+      .pre-footer-title-columns {
         font-size: 18px;
         font-weight: 400;
         padding-top: 22px;
@@ -66,13 +69,13 @@
         font-weight: 300;
       }
 
-      .comment-author {
+      .pre-footer-comment-author {
         font-size: 12px;
         font-style: italic;
         color: #888;
       }
 
-      .comment-body {
+      .pre-footer-comment-body {
         font-size: 14px;
         margin-top: 5px;
       }
